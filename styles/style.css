@@ -2,4 +2,85 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+background-image: var(--bg-image);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+font-family: var(--main-font-family), sans-serif;
+background-color: var(--bg-color);
+color: var(--text-color);
+font-size: var(--main-text-size);
+}
+
+.header{
+  display: grid;
+  height: 100vh;
+  min-height: 375px;
+  padding: 10px;
+}
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu ul li { 
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer {
+  display: grid;
+  height: 100vh;
+  min-height: 375px;
+  padding: 10px;
+}
+
+.main {
+  padding: 40px 10px;
+}
+
+.title { 
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.page__title {
+  height: fit-content;
+  background-color: var(--highlight-background);
+  font-weight: var(--text-bold);
+  color: var(--highlight-color);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  height: 26px;
+  min-width: 70px;
+  background: transparent;
+  border: none;
+  font-size: inherit;
+  text-transform: lowercase;
+  color: var(--contrast-color);
+}
+
+.header__theme-menu-button-active {
+  border: 1px solid var(--contrast-color);
+}
+
+.title__quest {
+  color: var(--highlight-color);
+}
+
+.title__card {
+background-color: var(--highlight-background);
+color: var(--highlight-color);
+font-weight: var(--text-bold);
+line-height: 23.4px;
 }
