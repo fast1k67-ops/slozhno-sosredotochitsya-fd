@@ -1,0 +1,1 @@
+https://github.com/fast1k67-ops/slozhno-sosredotochitsya-fd
